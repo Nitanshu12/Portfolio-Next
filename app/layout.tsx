@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import LayoutWrapper from "@/components/LayoutWrapper"; // update path as needed
+// import LayoutWrapper from "@/components/LayoutWrapper"; // update path as needed
 
 
 
@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <LayoutWrapper>
+      {/* <LayoutWrapper> */}
         <ThemeProvider
           attribute="class" // this will add 'dark' or 'light' class to <html>
           defaultTheme="system"
@@ -41,7 +41,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-      </LayoutWrapper>  
+      {/* </LayoutWrapper>   */}
       </body>
     </html>
   );
